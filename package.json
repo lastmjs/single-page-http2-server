@@ -1,0 +1,25 @@
+{
+  "name": "single-page-http2-server",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "single-page-http2-server": "./server.js"
+  },
+  "scripts": {
+    "start": "single-page-http2-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lastmjs/single-page-http2-server.git"
+  },
+  "author": "Jordan Last <jordan.michael.last@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lastmjs/single-page-http2-server/issues"
+  },
+  "homepage": "https://github.com/lastmjs/single-page-http2-server#readme",
+  "dependencies": {
+    "http2": "^3.3.6",
+    "node-static": "^0.7.8"
+  }
+}
