@@ -10,7 +10,11 @@ const file = new static.Server(__dirname);
 
 require('http2').createServer(options, (req, res) => {
     req.addListener('end', () => {
-        file.serve(req, res);
+        file.serve(req, res, (error, result) => {
+            if (error && error.status === 404) {
+                file.serveFile('/index.html', 200, {}, req, res);
+            }
+        });
     }).resume();
 }).listen(8000, (error) => {
 
