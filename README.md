@@ -1,3 +1,5 @@
+This repository will no longer be maintained. It has been replaced, with many improvements, by Zwitterion: https://github.com/lastmjs/zwitterion
+
 This is a simple development server built to work with HTTP2 and server rewrites for single page applications. Whenever a static asset is not requested, the server will redirect to `index.html` in the current working directory of the server. A pre-generated SSL key and certificate are included, since this is meant to be a development server run on `localhost`.
 
 # Installation
